@@ -40,8 +40,7 @@ function Notes() {
          <ViewNote notes={notes} url={match.url} />
         </Route>
       </Switch>
-      </div>
-    </main>
+      </main>
   );
 }
 

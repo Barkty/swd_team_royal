@@ -6,6 +6,7 @@ import {
   Switch,
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import Navbar from './components/notes/navbar';
 
 // Style import
 import "./assets/css/App.css";
@@ -31,14 +32,15 @@ function App() {
     useEffect(() => {
 	WebFont.load({
 	    google: {
-		families: ['Poppins', 'Roboto']
+		families: ['Playfair Display', 'Viaoda', 'Libre']
 	    }
 	});
     }, []);
 
     return (
     <StateProvider>
-      <Router>
+	<Router>
+	    <Navbar />
         <ScrollToTop />
           <Switch>
               <Route exact path="/">
