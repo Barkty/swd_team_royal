@@ -93,8 +93,8 @@ const AddNote = ({ addNote, alertMessage, editNote, noteToEdit, cancel }) => {
         <textarea
           id="note"
           name="note"
-          placeholder="Note"
-          className="add-note-fields"
+          placeholder="Note..."
+	  className="add-note-fields"
           {...register("note", {
             required: true,
             validate: isNUmberOfWordsValid,
@@ -148,13 +148,13 @@ const AddNote = ({ addNote, alertMessage, editNote, noteToEdit, cancel }) => {
         />
         <p className="text-danger">
           {errors1.edit_title && (
-            <small>Title must be 4 characters above</small>
+            <small>Title must be 4 characters and above</small>
           )}
         </p>
         <textarea
           id="edit_note"
           name="edit_note"
-          placeholder="note"
+          placeholder="Note"
           className="add-note-fields"
           defaultValue={
             editFormRef.current ? editFormRef.current[1].value : null

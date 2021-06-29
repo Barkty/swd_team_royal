@@ -121,9 +121,10 @@ Add Note styles
 .notes-container .underline {
   display: block;
 }
-#note-title{
-    font-weight: 600;
-    margin-bottom: 25px;
+
+#note-title {
+  font-weight: 600;
+  margin-bottom: 25px;
   text-align: left;
 }
 
