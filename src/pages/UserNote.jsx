@@ -2,7 +2,7 @@ import { useState } from "react";
 import AddNote from "../components/notes/addnote";
 import useContextGetter from "../hooks/useContextGetter";
 import ViewNote from "../components/notes/viewNotes";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 const UserNote = () => {
   const {
@@ -98,11 +98,11 @@ const UserNote = () => {
   };
   return (
     <main>
-      <div>
+      {/* <div>
           <Link className="btn btn-info btn-lg my-4" to="/notes" role="button">
-           view Notes
+           View Notes
           </Link>
-        </div>
+        </div> */}
       <div className="notes-container">
         <AddNote
           addNote={addNote}
