@@ -60,7 +60,7 @@ const AddNote = ({ addNote, alertMessage, editNote, noteToEdit, cancel }) => {
 
   return (
     <div className="add-note-container">
-      <h4 id="note-title">Want to share what you learn't? Add it!</h4>
+      <h4 id="note-title" className='font'>Want to share what you learn't? Add it!</h4>
       {alertMessage.message ? (
         <Alert variant={alertMessage.variant}>{alertMessage.message}</Alert>
       ) : (
@@ -76,7 +76,7 @@ const AddNote = ({ addNote, alertMessage, editNote, noteToEdit, cancel }) => {
           onChange={handleSelectChange}
         />
         <p className="text-danger">
-          {!selectedOption && <small>select a topic</small>}
+          {!selectedOption && <small>Select a topic</small>}
         </p>
         <input
           className="add-note-fields"
@@ -88,12 +88,12 @@ const AddNote = ({ addNote, alertMessage, editNote, noteToEdit, cancel }) => {
           })}
         />
         <p className="text-danger">
-          {errors.title && <small>Title must be 4 characters above</small>}
+          {errors.title && <small>Title must be 4 characters and above</small>}
         </p>
         <textarea
           id="note"
           name="note"
-          placeholder="note"
+          placeholder="Note"
           className="add-note-fields"
           {...register("note", {
             required: true,

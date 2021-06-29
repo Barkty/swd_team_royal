@@ -1,4 +1,5 @@
 import StateProvider from "./components/StateProvider";
+import {useEffect} from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -18,22 +19,37 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 // Pages
 import Notes from "./pages/Notes";
 import UserNote from "./pages/UserNote";
+import Landing from './pages/Landing';
+
+//Webfontloader
+import WebFont from 'webfontloader';
+
 
 library.add(fas);
 
 function App() {
-  return (
+    useEffect(() => {
+	WebFont.load({
+	    google: {
+		families: ['Poppins', 'Roboto']
+	    }
+	});
+    }, []);
+
+    return (
     <StateProvider>
       <Router>
         <ScrollToTop />
           <Switch>
               <Route exact path="/">
-                <UserNote />  
+                <Landing />  
               </Route> 
-              <Route path="/notes">
-                <Notes />  
+              <Route path="/mynotes">
+                <UserNote />  
               </Route>
-           
+              <Route path='/notes'>
+		  <Notes />
+		</Route>
           </Switch>
       </Router>
     </StateProvider>

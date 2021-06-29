@@ -98,12 +98,12 @@ const UserNote = () => {
   };
   return (
     <main>
-      <div>
+	 <div>
           <Link className="btn btn-info btn-lg my-4" to="/notes" role="button">
-           view Notes
+           View Notes
           </Link>
         </div>
-      <div className="notes-container">
+	<div className="notes-container">
         <AddNote
           addNote={addNote}
           alertMessage={alertMessage}

@@ -16,14 +16,6 @@ function Notes() {
 
   return (
     <main className="mt-5">
-      <div>
-      <Link className="btn btn-info btn-lg my-4 mx-2" to="/" role="button">
-           Add Notes
-          </Link>
-          <Link className="btn btn-info btn-lg my-4 mx-2" to="/notes" role="button">
-           View Notes
-          </Link>
-        </div>
       <Switch>
         <Route path={`${match.path}/:noteId`}>
           <Note />
@@ -32,7 +24,16 @@ function Notes() {
           <div className="container mt-5 py-2">
             <h2 className="font-weight-bold">Welcome {userData.email}</h2>
           </div>
-          <div className="my-2">
+	    {/*Placed the note buttons after the welcome text*/} 
+	    <div>
+      <Link className="btn btn-info btn-lg my-4 mx-2" to="/" role="button">
+           Add Notes
+          </Link>
+          <Link className="btn btn-info btn-lg my-4 mx-2" to="/notes" role="button">
+           View Notes
+          </Link>
+        </div>
+            <div className="my-2">
 
           </div>
          <ViewNote notes={notes} url={match.url} />

@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+//import WebFont from 'webfontloader';
 
 ReactDOM.render(
   <React.StrictMode>
