@@ -62,24 +62,24 @@ Icon ans Spinner styles
   }
 }
 
-/* Landing Page */
+/*Landing page*/
 .bg-banner {
-    height: 100vh;
-    width: 100%;
-    max-width: 1300px;
     background-image: url('../images/notes.jpeg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
 .land-container {
+    position: relative;
+    top: 20%;
     display: flex;
     flex-direction: column;
-    justify-contents: center;
+    justify-content: center;
     align-items: center;
-    margin-top: 100px;
 }
-.btn-container {
+.btn-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -88,7 +88,7 @@ Icon ans Spinner styles
     background-color: #efeeee;
     color: #f26627;
     transition: all 0.5s;
-    border: 1px solid #f26627;
+    border: 2px solid #f26627;
     font-family: 'Viaoda';
     font-weight: 300;
     font-size: 1.4em;
@@ -115,7 +115,7 @@ Icon ans Spinner styles
 .btn-cf:hover {
     background-color: #efeeee;
     color: #f26627;
-    border: 3px solid #f26627;
+    border: 2px solid #f26627;
 }
 .land-intro {
     font-family: 'Playfair Display', serif;
@@ -136,7 +136,7 @@ ul {
     list-style: none;
     display: flex;
     justify-self: flex-end;
-    margin-top: -40px;
+    margin-top: -5px;
     margin-left: 50px;
 }
 ul li {

@@ -7,9 +7,9 @@ function Landing() {
 	    <Navbar />
 	    <div className='land-container'>
 		<p className='text-center land-intro'>EASY LEARNING WITH OUR NOTES</p>
-		<div className='container'>
+		<div className='btn-container'>
 		    <Link to='/login' role='button' className='btn py-2 my-2 mr-4 btn-c'>Login</Link>
-		    <Link to='/register' role='button' className='btn btn-cf my-2 py-2'>Become a member</Link>
+		    <Link to='/register' role='button' className='btn btn-cf my-2 py-2'>Register</Link>
 		</div>
 	    </div>
 	</div>
