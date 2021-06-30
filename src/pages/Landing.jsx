@@ -1,16 +1,10 @@
 import {Link} from 'react-router-dom';
+import Navbar from '../components/notes/navbar';
 
 function Landing() {
     return(
 	<div className='bg-banner'>
-	    {/*<header>
-		<p className='text-left'>Create<span>Notes.</span></p>
-		<div>
-		    <Link to='/'>Home</Link>
-		    <Link to='/login'>Login</Link>
-		    <Link>
-		</div>
-		</header>*/}
+	    <Navbar />
 	    <div className='land-container'>
 		<p className='text-center land-intro'>EASY LEARNING WITH OUR NOTES</p>
 		<div className='container'>

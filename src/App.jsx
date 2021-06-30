@@ -6,7 +6,6 @@ import {
   Switch,
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import Navbar from './components/notes/navbar';
 
 // Style import
 import "./assets/css/App.css";
@@ -40,7 +39,6 @@ function App() {
     return (
     <StateProvider>
 	<Router>
-	    <Navbar />
         <ScrollToTop />
           <Switch>
               <Route exact path="/">

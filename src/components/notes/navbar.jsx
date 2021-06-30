@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
 	<nav className='navbar bg-dark'>
 	    <div className='left'>
-		<Link to='/'>Easy<span className='span'>Notes.</span></Link>
+		<Link className='nav-link1' to='/'>Easy<span className='span'>Notes.</span></Link>
 	    </div>
 	    <ul>
 		<li>

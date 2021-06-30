@@ -64,9 +64,6 @@ Icon ans Spinner styles
 
 /* Landing Page */
 .bg-banner {
-    display: flex;
-    justify-contents: center;
-    align-items: center;
     height: 100vh;
     width: 100%;
     max-width: 1300px;
@@ -75,16 +72,26 @@ Icon ans Spinner styles
     background-size: cover;
     background-repeat: no-repeat;
 }
+.land-container {
+    display: flex;
+    flex-direction: column;
+    justify-contents: center;
+    align-items: center;
+    margin-top: 100px;
+}
 .btn-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 .btn-c {
     background-color: #efeeee;
     color: #f26627;
+    transition: all 0.5s;
     border: 1px solid #f26627;
     font-family: 'Viaoda';
     font-weight: 300;
+    font-size: 1.4em;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -92,20 +99,23 @@ Icon ans Spinner styles
     background-color: #f26627;
     color: #efeeee;
     padding: 50px;
-    border: 1px solid #efeeee;
+    border: 2px solid #f26627;
+    box-shadow: 3px 5px 5px white;
 }
 
 .btn-cf {
     background-color: #f26627;
     color: #efeeee;
+    transition: all 0.5s;
     border: 2px solid #f26627;
     font-family: 'Libre';
-    font-weight: 300;
+    font-size: 1.4em;
+    font-weight: 200;
 }
 .btn-cf:hover {
     background-color: #efeeee;
     color: #f26627;
-    border: 1px solid #f26627;
+    border: 3px solid #f26627;
 }
 .land-intro {
     font-family: 'Playfair Display', serif;
@@ -143,11 +153,16 @@ ul li {
     border-bottom: 2px solid #9bd7d1;
     color: #efeeee;
 }
-.span {
-    color: #efeeee;
+.nav-link1, .span {
     font-family: 'Roboto', cursive;
     font-size: 21px;
     font-weight: 300;
+}
+.span {
+    color: #efeeee;
+}
+.nav-link1 {
+    color: #9bd7d1;
 }
 
 /*-------------------------------------------------
